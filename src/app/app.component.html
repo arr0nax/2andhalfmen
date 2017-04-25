@@ -1,8 +1,7 @@
 
-<div class="click background">
   <div class="emojicontainer">
     <div class='emojis' *ngFor='let emoji of safeEmojis;'>
       <div [innerHTML]=emoji></div>
     </div>
   </div>
-</div>
+  <router-outlet></router-outlet>

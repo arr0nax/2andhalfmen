@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
       var randomR = Math.floor(Math.random()*255);
       var randomG = Math.floor(Math.random()*255);
       var randomB = Math.floor(Math.random()*255);
-      var addEmojis = '<div class="emoji emojioverlay" id="emoji'+this.emojiCount+'" style="position:absolute;top:-100px;left:'+randomWidth+'vw;  animation: movedown '+randomSpeed+'s;"><h1 style="color:rgba('+randomR+','+randomG+','+randomB+',0.5);">'+this.emojis[randomEmoji]+'</h1></div>';
+      var addEmojis = '<div class="emoji emojioverlay" id="emoji'+this.emojiCount+'" style="position:absolute;top:-100px;left:'+randomWidth+'vw;  animation: movedown '+randomSpeed+'s;"><h1 style="color:rgba('+randomR+','+randomG+','+randomB+',0.2);font-size:50px;">'+this.emojis[randomEmoji]+'</h1></div>';
       this.safeEmojis.push(this.sanitzer.bypassSecurityTrustHtml(addEmojis));
       this.emojiCount += 1;
     }
